@@ -27,7 +27,7 @@ increaseAge()
     this.age=this.age+1;
     }
     else{
-        alert("Age should not be more than 50");
+        alert("Age should not be greater than 50");
     }
 }
 
