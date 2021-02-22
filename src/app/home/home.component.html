@@ -1,0 +1,20 @@
+<h1>Home Component</h1>
+<p>This is the home component</p>
+<app-header></app-header>
+<p>
+    Hi {{username}}. Your email is {{email}} and your age is {{age}}
+
+
+</p>
+<input class="input-group" type="text" [value]="username"><br>
+<div  class="input-group-prepend">
+    <button class="popup" (click)="increaseAge()">Increment</button><br>
+
+
+</div>
+
+<button  (click)="deceaseAge()">Decrement</button>
+<br>
+
+<app-footer></app-footer>
+
