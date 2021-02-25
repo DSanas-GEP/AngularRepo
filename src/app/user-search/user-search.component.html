@@ -1,0 +1,38 @@
+<p>user-search works!</p>
+
+<input input="text" [(ngModel)]='key' placeholder="search text goes here"><br>
+<!-- <table>
+<tr>
+    <th *ngFor="let col of headers"> {{col}}</th>
+   
+</tr>
+
+<tr *ngFor='let row of rows  | search: key'>
+<td *ngFor="let col of headers">
+    {{row[col]}}
+</td>
+
+</tr>
+
+</table> -->
+
+<table>
+    <thead>
+        <tr>
+
+            <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+        </tr>
+
+    </thead>
+<tbody>
+
+    <tr *ngFor='let user of users | search:key'>
+        <td>{{user.fname}}</td>
+        <td>{{user.mname}}</td>
+        <td>{{user.lname}}</td>
+    </tr>
+</tbody>
+   
+</table>

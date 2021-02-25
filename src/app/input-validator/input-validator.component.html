@@ -1,0 +1,4 @@
+<p>Name : {{name}}</p>
+
+<input type="text"  (keyup)="Validation($event)" (blur)="blurMethod($event)" [ngModel]="name" >
+<p [ngStyle]="{'color': msgCol}" >{{msg}}</p>

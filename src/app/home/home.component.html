@@ -1,20 +1,33 @@
 <h1>Home Component</h1>
 <p>This is the home component</p>
-<app-header></app-header>
-<p>
+<!-- <app-header></app-header> -->
+<!-- <p>
     Hi {{username}}. Your email is {{email}} and your age is {{age}}
 
 
 </p>
-<input class="input-group" type="text" [value]="username"><br>
-<div  class="input-group-prepend">
-    <button class="popup" (click)="increaseAge()">Increment</button><br>
+<input class="input-group" type="text" [(ngModel)]="username"><br>
+
+    <button class="input-group-prepend" (click)="increaseAge()">Increment</button><br>
 
 
-</div>
 
-<button  (click)="deceaseAge()">Decrement</button>
+
+<button  (click)="decreaseAge()">Decrement</button>
+<input type="text" [(ngModel)]= "username" id="">
 <br>
 
-<app-footer></app-footer>
+
+<app-age-validator></app-age-validator>
+
+<br><br>
+
+<app-input-validator class="mt-5"></app-input-validator> -->
+<!-- <app-image-selector></app-image-selector> -->
+<!-- <app-image-selector></app-image-selector> -->
+
+<!-- <app-footer></app-footer> -->
+
+
+<app-user-search></app-user-search>
 

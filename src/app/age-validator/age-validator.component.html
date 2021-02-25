@@ -1,0 +1,28 @@
+ <!-- <h1 [ngStyle]="{'color':headcolor}">{{header}}</h1> -->
+
+
+
+
+<
+    <br>   
+
+ <!-- <h1 [ngStyle]="{'color':num?(num % 2 == 0?'green':'red'):'black'}">{{num?( num % 2 == 0?'Even':'Odd')
+    :'Please enter number'}}</h1>  -->
+
+    <button  (click)='toggleBoxes()'>{{btnText}}</button>
+
+
+<div *ngIf="showAgeBox" >
+    <input placeholder="text box"  type="text" [(ngModel)]="num">
+    <p [ngStyle]="{'color':isString()?'red':(checkEven()=='Even'?'green':'blue')}"> {{isString()?'only numbers are allowded':checkEven()}}</p>
+
+
+</div>
+
+<div *ngIf="!showAgeBox">
+    <input  type="text" placeholder="age" (keyup)="ageUpdate($event)"  [(ngModel)]="age"> 
+     <h1 [ngStyle]="{'color':age?(age>18?'green':'red'):'black'}">{{age?(age>18?'Valid age':'Invalid age')
+        :'Please enter age'}}</h1>
+
+</div>
+

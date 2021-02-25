@@ -1,0 +1,17 @@
+<select (change)="selectImage($event)">
+    <option *ngFor="let image of images" [value]="image.id">{{image.title}}</option>
+    <!-- <option value="{{images[1].id}}">{{images[1].title}}</option>
+    <option value="{{images[2].id}}">{{images[2].title}}</option>
+    <option value="{{images[3].id}}">{{images[3].title}}</option> -->
+</select>
+<!-- <div [innerHTML]='generateImages()'>
+</div>
+{{generateImages()}} -->
+<br>
+<div *ngFor="let image of images">
+    <img *ngIf="image.show" [src]="image.url" alt="">
+    <p *ngIf="image.show">{{image.title}}</p>
+</div>
+<!-- <img *ngIf="images[1].show" [src]="images[1].url" alt="">
+<img *ngIf="images[2].show" [src]="images[2].url" alt="">
+<img *ngIf="images[3].show" [src]="images[3].url" alt=""> -->
