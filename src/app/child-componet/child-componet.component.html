@@ -1,1 +1,14 @@
-<p>child-componet works!</p>
+<div class="childdiv"><p>This is child</p>
+
+  <div>{{Parentnum}}</div>
+  <div>{{parentInput}}</div>
+
+
+
+  <button (click)="toParent()">Child Button</button>
+
+  <input type="text" [(ngModel)]="name" (keyup)="call()">
+
+
+
+</div> 

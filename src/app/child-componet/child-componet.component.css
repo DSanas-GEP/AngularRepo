@@ -1,0 +1,10 @@
+.childdiv{
+    background-color: violet;
+    display: block;
+    width: 50%;
+}
+
+button{
+    color: tomato;
+    background-color:greenyellow;
+}
