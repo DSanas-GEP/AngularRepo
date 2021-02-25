@@ -22,16 +22,12 @@ this.email="John@cbn.com"
 
 increaseAge()
 { 
-    if (this.age<50)
-    {
-    this.age=this.age+1;
-    }
-    else{
-        alert("Age should not be greater than 50");
-    }
+    //Trenary operators
+    this.age<50 ? this.age=this.age+1: alert("Age should not be greater than 50");
+    
 }
 
-deceaseAge()
+decreaseAge()
 {
     if(this.age>20){
         this.age=this.age-1;
