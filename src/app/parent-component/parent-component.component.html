@@ -1,1 +1,17 @@
-<p>parent-component works!</p>
+<div class="div1">This is parent
+
+
+ <p> {{msg}}</p>
+ <p>{{name1}}</p>
+
+
+<button (click)="incrementChild()">Parent Button</button><br>
+
+<input type="text" (keyup)=callParent($event) [(ngModel)]="childname" ><br><br>
+
+<app-child-componet [parentInput]="childname" (inputChild)="callChild($event)" (Eventchild)="msg=$event" [Parentnum]="num">
+
+
+
+</app-child-componet>
+</div>
