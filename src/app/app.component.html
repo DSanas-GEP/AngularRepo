@@ -1,5 +1,23 @@
 <!-- <app-home></app-home> -->
-<p>This is App HTML</p>
+<!-- <p>This is App HTML</p>
 <app-parent-component></app-parent-component>
+<br><br> -->
+
+
+
+<div class="container">
+<nav class="form-control bg-info">
+    <a class="mr-2 text-dark" routerLink="/home"  routerLinkActive="active">Home</a>
+    <a class="mr-2 text-dark" routerLink="/image"  routerLinkActive="active">Image Selector</a>
+    <a class="mr-2 text-dark" routerLink="/http"  routerLinkActive="active">Http</a>
+    <a class=" mr-2 text-dark" routerLink="/products" routerLinkActive="active" >Products</a>
+    <a class="mr-2 text-dark" routerLink="/GP"  routerLinkActive="active">GP</a>
+    <a class="mr-2 text-dark" routerLink="/register"  routerLinkActive="active">Register</a>
+    <a class="mr-2 text-dark" routerLink="/forms"  routerLinkActive="active">Create Form</a>
+    <a class="text-dark" href="" [routerLink]="['/food']" routerLinkActive="active">Food 1</a>
+ 
+</nav>
 
 <router-outlet></router-outlet>
+
+</div>

@@ -1,0 +1,40 @@
+ <div *ngIf='!userlogged' >
+ <form class="container border border-dark" [formGroup]="empForm" >
+ <div class="panel panel-primary ">
+    <div class="panel-heading bg-warning mt-3 text-center">
+        <h3 class="panel-title ">
+            Create Form
+        </h3>
+      </div>
+
+      <div class="panel-body">
+          <div class="form-group">
+              <label class="col-2" for="name">Full Name</label>
+               <input type="text" id="name" formControlName="name" [(ngModel)]="fullname" class="form-control">
+          </div>
+      </div>
+
+      <div class="panel-body">
+        <div class="form-group">
+            <label class="col-2" for="password">Password</label>
+             <input type="text" id="password" formControlName="password" [(ngModel)]="pwd" class="form-control">
+        </div>
+    </div>
+<p class="font-weight-bold">{{message}}</p>
+    <button (click)="displayInfo()" class="btn btn-primary mb-3 ">Submit</button>
+    
+</div> 
+</form> 
+</div>
+<div>
+    <button class="btn btn-primary" *ngIf='userlogged' (click)="logout()">Logout</button>
+</div>
+
+
+
+    <!-- <p *ngIf="clickSubmit">Name is {{fullname}}</p>
+    <p *ngIf="clickSubmit">Email is : {{emailid}}</p> -->
+
+    
+
+

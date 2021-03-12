@@ -1,0 +1,28 @@
+<div>
+<form [formGroup]="regForm" (ngSubmit)="register()">
+<input type="text" formControlName="fname" >
+<div *ngIf="f['fname'].touched&&f['fname'].errors">
+    <p *ngIf="f['fname'].errors.required">fname is mandatory</p>
+    <p *ngIf="f['fname'].errors.minlength">fname should be min 3 characters</p>
+
+</div>
+
+<input type="text" formControlName="lname" >
+<div *ngIf="f['lname'].touched&&f['lname'].errors">
+    <p *ngIf="f['lname'].errors.required">lname is mandatory</p>
+    <p *ngIf="f['lname'].errors.minlength">lname should be min 3 characters</p>
+
+</div>
+
+<input type="text" formControlName="email" >
+<div *ngIf="submitted&&f['email'].errors">
+    <p *ngIf="f['email'].errors.required">email is mandatory</p>
+    <p *ngIf="f['email'].errors.email">Enter valid email</p>
+
+</div>
+
+<div>
+    <button (click)="validateInfo()" [disabled]="!regForm.valid">Register</button>
+    <button (click)='resetform()'> Reset</button>
+</div>
+</form>

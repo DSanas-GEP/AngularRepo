@@ -9,9 +9,11 @@ import { Component, OnInit ,Input,EventEmitter,Output} from '@angular/core';
 export class ChildComponetComponent implements OnInit {
  childnum=100;
 name="";
+test="";
 
-  @Input() Parentnum=100;
-  @Input() parentInput="parentInput";
+  @Input('Parentnum')  ParentNumber:number;
+  @Input() parentInput:string;
+  // ="parentInput";
 
 @Output() Eventchild = new EventEmitter();
 @Output() inputChild = new EventEmitter();
@@ -30,7 +32,7 @@ name="";
 
   call()
   {
-    this.inputChild.emit(this.name);
+    this.inputChild.emit([this.name,this.test]);
   }
  
 }

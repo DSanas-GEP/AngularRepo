@@ -1,0 +1,15 @@
+<div class="col mb-2">
+    <h3>{{product.title}}</h3>
+    <img class="col-10" [src]="product.image" alt="product image">
+    <br>
+    <!-- <p>
+        {{product.description}}
+    </p> -->
+    <p>{{product.price | currency: 'INR'}}</p>
+    <p> {{product.price | currency: 'INR'}} </p>
+    <p>Quantity {{product.quantity}}</p>
+    <button (click)="updateQuantity('add', product.id)" class=" form-control btn btn-success">+</button>
+    <button (click)="updateQuantity('remove', product.id)" class="form-control btn btn-danger">-</button>
+    <br>
+    <button (click)="getDetails(product.description,product.title)" class="btn btn-info form-control mt-3 mb-3" >Explore</button>
+</div>

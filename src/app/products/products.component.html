@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2> Products</h2>
+            <h4>Cart Total: {{total |currency: 'INR'}}</h4>
+        </div>
+    </div>
+    <div class="row">
+
+        <div *ngFor="let product of products" class="col-md-3">
+            <app-product (setQuantity)="setProductQuantity($event)" (details)="gDetails($event)" [product]="product" ></app-product>
+        </div>
+        <br>
+    </div>
+    <br>
+</div>

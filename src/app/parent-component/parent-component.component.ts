@@ -8,10 +8,11 @@ import { Component, OnInit,Output } from '@angular/core';
 export class ParentComponentComponent implements OnInit {
 
   constructor() { }
- num:number=100;
+ num:number=2000;
  name1="";
 childname="";
-msg=""
+msg="";
+test="";
 
   ngOnInit(): void {
   }
@@ -28,6 +29,7 @@ this.childname = e.target.value;
   callChild(e)
   {
     this.name1=e;
+    this.test=e;
   }
 
 //   message1(e)

@@ -9,7 +9,7 @@ imgOff:string="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAADaCAMAAABqzqV
    
   constructor(private element : ElementRef ) { 
     this.styleColor(null);
-    this.textExchange(null);
+    // this.textExchange(null);
     // document.getElementById("main").style.display="inline";
 
     // this.hide('main');
@@ -22,10 +22,10 @@ imgOff:string="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAADaCAMAAABqzqV
     this.element.nativeElement.style.background=color;
   }
 
-  textExchange(txt)
-  {
-    this.element.nativeElement.innerHTML=txt;
-  }
+  // textExchange(txt)
+  // {
+  //   this.element.nativeElement.innerHTML=txt;
+  // }
 
 
 // hide(id,id2)
@@ -50,7 +50,7 @@ imgOff:string="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAADaCAMAAABqzqV
   @HostListener('mouseenter') mouseEnter()
   {
     this.styleColor('green');
-    this.textExchange('Engine On');
+    // this.textExchange('Engine On');
     //  this.hide1('On');
     // this.hide('Off','On');
 
@@ -59,7 +59,7 @@ imgOff:string="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAADaCAMAAABqzqV
   @HostListener('mouseleave') mouseLeave()
   {
     this.styleColor('red');
-    this.textExchange('Engine Off');
+    // this.textExchange('Engine Off');
     //  this.hide1('Off');
     // this.hide('On','Off');
   }

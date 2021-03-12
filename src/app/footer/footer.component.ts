@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-//  show:string;
+ show:string;
 
 // hideImg:boolean=false;
 
@@ -19,10 +19,10 @@ export class FooterComponent implements OnInit {
 
 
   }
-// showImage(img)
-// {
-//   this.show=img;
-// }
+showImage(img)
+{
+  this.show=img;
+}
 
 mouseO()
 {

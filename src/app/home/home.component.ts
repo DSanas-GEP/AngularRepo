@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
+
 @Component (
     {
         selector:'app-home',
@@ -9,15 +10,23 @@ import {Component, OnInit} from '@angular/core';
 )
 
 export class HomeComponent implements OnInit{
+    constructor() { }
+    // images : any = images;
 username : string="";
 email : string="";
-age=45;
+age:number=45;
+total:any=50;
+str:string;
+
+
+ 
 
 
 ngOnInit()
 {
 this.username="John";
 this.email="John@cbn.com"
+
 }
 
 increaseAge()

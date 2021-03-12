@@ -1,0 +1,18 @@
+<p>user-registration works!</p>
+
+
+<form #login="ngForm" novalidate>
+    <Fieldset>
+        <legend Form></legend>
+
+<input type="text" name="uname" ngModel #uname="ngModel" id="username" required placeholder="username">
+<p *ngIf="uname.errors" >Uname is required</p>
+<input type="text" name="lname" #lname="ngModel" ngModel id="lastname" required  placeholder="Last Name">
+<p *ngIf="lname.errors" >Last Name is required</p>
+<input type="text" name="email" #email="ngModel" ngModel id="emailaddress" required  placeholder="Email">
+<p *ngIf="email.errors" >Email Id is required</p>
+
+</Fieldset>
+
+</form>
+
